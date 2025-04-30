@@ -102,5 +102,21 @@ namespace WindowsFormsApp4_enum
                 textBox2.Text = "요일을 입력해주시옹";
             }
         }
+
+        Day InputCheck(string message)
+        {
+            switch (message)
+            {
+                case "월요일": return Day.Mon;
+                case "화요일": return Day.Tue;
+                case "수요일": return Day.Wed;
+                case "목요일": return Day.Thu;
+                case "금요일": return Day.Fri;
+                case "토요일": return Day.Sat;
+                case "일요일": return Day.Sun;
+                default: break;
+
+            }
+        }
     }
 }
