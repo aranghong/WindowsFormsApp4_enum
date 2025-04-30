@@ -114,7 +114,7 @@ namespace WindowsFormsApp4_enum
                 case "금요일": return Day.Fri;
                 case "토요일": return Day.Sat;
                 case "일요일": return Day.Sun;
-                default: break;
+                default: return Day.Mon;
 
             }
         }
